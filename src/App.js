@@ -3,10 +3,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>RESISTANCE IS FUTILE</h1>
-      </header>
+    <div className="App"> 
+        <div className="main">
+          <div className="side-bar">
+            {/* todo */}
+          </div>
+          <div className="spotlight">
+            {/* todo */}
+          </div>
+        </div>
     </div>
   );
 }
