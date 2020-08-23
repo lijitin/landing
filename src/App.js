@@ -14,9 +14,12 @@ function App() {
               <p>It's Justin</p>
             </div>
             <div className="links">
-              {/* todo */}
+              {/* todo*/}
+              <p>Links will be added soon.</p>
             </div>
             <div className="javascript-fun-stuffs">
+              <p>Spinny donuts</p>
+              <p>Something-clicker</p>
               {/* todo 
                 1. Get a spinning donut
                 2. Maybe do a clicker game of some sort?
