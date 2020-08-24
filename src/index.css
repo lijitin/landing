@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'ComputerPixel';
+  src: local('ComputerPixel'), url(./fonts/computer_pixel-7.ttf) format('truetype');
+}

@@ -28,24 +28,30 @@ html, body {
   color: white;
 }
 
-  .circle-crop {
-    margin-top: 5vh;
-    width: 192px; 
-    height: 192px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
+.circle-crop {
+  margin-top: 5vh;
+  width: 192px; 
+  height: 192px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 img {
-    display: inline;
-    margin: 0 auto;
+  display: inline;
+  margin: 0 auto;
 }
 
-
-
-.spotlight {
+.display {
   width: 100%;
   height: 100%;
   background-color: #dde4eb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.javascript-fun-stuffs {
+  font-family: Roboto;
 }
