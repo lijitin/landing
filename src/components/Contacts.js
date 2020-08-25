@@ -1,7 +1,6 @@
 import React from 'react';
 import LinkedInLogo from '../assets/linkedin_light_32x32.png';
 import GitHubLogo from '../assets/GitHub-Mark-Light-32px.png';
-import MailLogo from '../assets/mail-32.png';
 import './Contacts.css';
 
 class Contacts extends React.Component {
@@ -10,9 +9,6 @@ class Contacts extends React.Component {
         return (
             <div>
                 <div className="icons">
-                    <a href="mailto: lijitin11@gmail.com">
-                        <img src={MailLogo} alt="MailInLogo"></img>
-                    </a>
                     <a href="https://www.linkedin.com/in/ji-tin-justin-li/">
                         <img src={LinkedInLogo} alt="LinkedInLogo"></img>
                     </a>

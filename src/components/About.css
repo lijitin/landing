@@ -1,0 +1,12 @@
+.about{
+    display: flex;
+    flex-direction: row;
+}
+
+.about div{
+    margin: 1em;
+}
+
+div.left-box{
+    align-self: flex-end;
+}

@@ -1,8 +1,11 @@
 .icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    margin: 0.5em 0;
 }
+
 .icons a {
-    padding: 0.5vh;
+    margin: 0 0.5em;
 }
