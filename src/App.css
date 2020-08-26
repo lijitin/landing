@@ -89,7 +89,6 @@ div.description-box {
 .content-links p {
   margin: 0.5em 0;
 }
-
 .display {
   width: 100%;
   height: 100%;
@@ -105,4 +104,28 @@ div.description-box {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* spotlight animations */
+.spotlight{
+  background-color: pink;
+}
+.spotlight-enter{
+  opacity: 0;
+  transform: scale(0.9);
+  transform: translateY(-200px);
+}
+.spotlight-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms ease;
+}
+.spotlight-exit{
+  opacity: 1;
+}
+.spotlight-exit-active{
+  opacity: 0;
+  transform: scale(0.9);
+  transform: translateY(200px); 
+  transition: opacity 300ms, transform 300ms;
 }

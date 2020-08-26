@@ -1,9 +1,9 @@
-.about{
+.home{
     display: flex;
     flex-direction: row;
 }
 
-.about div{
+.home div{
     margin: 1em;
 }
 
