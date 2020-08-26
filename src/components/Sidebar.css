@@ -1,0 +1,95 @@
+.sidebar {
+    min-width: 280px;
+    height: 100%;
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.circle-crop {
+  margin-top: 5vh;
+  width: 192px; 
+  height: 192px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+img {
+  display: inline;
+  margin: 0;
+}
+
+div.description-box {
+  margin: 0.5em 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-box span {
+  display: block;
+  margin: 0;
+}
+.description-box .name { 
+  font-size: 2em;
+}
+.description-box .short-description {
+  font-size: 0.9em;;
+}
+.direct-contacts {
+  margin: 0;
+}
+
+.direct-contacts div{
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+.direct-contacts span {
+  display: block;
+  margin: 0 0.5em;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+}
+.links button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.links button:focus{
+    outline: 0;
+}
+
+.links div{
+    margin: 0.5em;
+}
+/* selected div animation */
+.divSelected { 
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: white;
+}
+
+
+.sidebar-bottom{
+    margin: 2em 0;
+}

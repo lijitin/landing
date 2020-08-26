@@ -17,25 +17,30 @@ class App extends React.Component {
       currentSpotlight: 'home',
       showSpotlight: true,
     }
+    this.sidebarElement = React.createRef(); // store the child element for updating sidebar button border
   }
   handleSelectPage = (pageName) => {
     if(this.state.currentSpotlight === pageName){
       return;
     }
     this.setState({showSpotlight: false});
-    window.setTimeout(this.showPageNow.bind(this, this, pageName), 300)
+    this.sidebarElement.current.setState({ currentSelectedPageButton: pageName });
+    window.setTimeout(this.showPageNow.bind(this, this, pageName), 300);
+
   }
 
   showPageNow(obj, pageName){
     obj.setState({currentSpotlight: pageName});
     obj.setState({showSpotlight: true});
+    // update sidebar div border
+    // obj.sideBarElement.setState({currentSelecetedPage: pageName});
   }
 
   render(){
     return (
       <div className="App">
         <div className="main">
-          <Sidebar onSelectPage={this.handleSelectPage}></Sidebar>
+          <Sidebar ref={this.sidebarElement} onSelectPage={this.handleSelectPage}></Sidebar>
           <div id='debug'></div>
           <div className="display">
             <CSSTransition
