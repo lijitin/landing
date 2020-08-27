@@ -42,6 +42,7 @@ export default class Sidebar extends React.Component{
                         <div className="description-box">
                             <span className="name">Ji Tin Justin Li</span>
                             <span className="short-description">Software Engineeer</span>
+                            <span className="location">Milwaukee, WI</span>
                         </div>
                         <div className="links">
                             <div className={this.divClassName('home')}>
@@ -51,7 +52,7 @@ export default class Sidebar extends React.Component{
                                 <button onClick={this.handleSelectPageClick.bind(this, 'about')}>ABOUT</button>
                             </div>
                             <div className={this.divClassName('demo')}>
-                                <button onClick={this.handleSelectPageClick.bind(this, 'demo')}>CODE SNIPPETS</button>
+                                <button onClick={this.handleSelectPageClick.bind(this, 'demo')}>PROJECTS</button>
                             </div>
                         </div>
                     </div>

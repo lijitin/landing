@@ -1,12 +1,22 @@
-.home{
+.homepage {
     display: flex;
     flex-direction: row;
+
 }
 
-.home div{
+.homepage div{
     margin: 1em;
 }
 
-div.left-box{
-    align-self: flex-end;
+.homepage h1{
+    font-size: 3em;
 }
+
+.homepage button {
+    font-size: 0.8em;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+}
+

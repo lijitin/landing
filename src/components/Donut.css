@@ -8,7 +8,15 @@
     justify-content: center;
 }
 
+.donut-frame pre{
+    color: black;
+    position: absolute;
+    z-index: 0;
+}
+
+
 #toggle-btn {
+    z-index: 1;
     display: inline-block;
     padding: 0.2em;
     border: 0.16em solid #FFFFFF;
@@ -42,6 +50,6 @@
 
 #ascii {
     display: 'none';
-    color: white;
+    color: LightCyan;
     font-style: mono;
 }

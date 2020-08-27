@@ -33,14 +33,18 @@ div.description-box {
 
 .description-box span {
   display: block;
-  margin: 0;
+  margin: 0.2em;
 }
 .description-box .name { 
   font-size: 2em;
 }
 .description-box .short-description {
-  font-size: 0.9em;;
+  font-size: 1em;
 }
+.description-box .location{
+  font-size: 0.7em;
+}
+
 .direct-contacts {
   margin: 0;
 }
@@ -80,13 +84,14 @@ div.description-box {
 
 .links div{
     margin: 0.5em;
-}
-/* selected div animation */
-.divSelected { 
+    border-color: transparent;
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
-    border-color: white;
+}
+/* selected div animation */
+.divSelected { 
+    border-color: white !important; 
 }
 
 

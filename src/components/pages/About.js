@@ -1,14 +1,15 @@
 import React from 'react';
-import './Home.css';
+import './About.css';
 
 export default class About extends React.Component {
 
     render() {
         return (
             <div className='about'>
-                <div className='right-box text'>
+                <div>
                     <h1>About Me</h1>
-                    <p>Recent IIT CS graduate looking for a career in Software Development.</p>
+                    <p>Graduate from Illinoise Institute of Technology in Computer Science.</p>
+                    <p>Currently seeking for positions in Software Development (on-site or remote).</p>
                     <a href='./resume-JiTinJustinLi.pdf' download>Resume </a>
                 </div>
             </div>
