@@ -12,8 +12,7 @@ export default class Demo extends React.Component{
                     <p>- This site - built with react (html, css, javascript). Published on <a href="https://github.com/lijitin/landing/">Github pages</a>.</p>
                     <p>- Raspberry Pi 4 Distributed storage system - built with Apache Hadoop.</p>
                     <p>- <a href="https://github.com/lijitin/Streambot">Audio streaming discord bot</a>
-                    - built on .NET framework, with RESTful API consumer library
-                     <a href="https://discord.foxbot.me/stable/">discord.net</a>.
+                    - built on .NET framework, with RESTful API consumer library <a href="https://discord.foxbot.me/stable/">discord.net</a>.
                     </p>
                 </div>
                 

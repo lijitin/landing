@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Sidebar.css';
 
-import headshot from '../assets/headshot.png';
+import headshot from '../assets/headshot-default.png';
 import MailIcon from '../assets/mail-16.png'
 import PhoneIcon from '../assets/phone-2-16.png'
 

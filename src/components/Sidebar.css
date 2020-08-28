@@ -19,9 +19,10 @@
   border-radius: 50%;
 }
 
-img {
-  display: inline;
+.circle-crop img {
   margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 div.description-box {
