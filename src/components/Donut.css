@@ -53,3 +53,16 @@
     color: LightCyan;
     font-style: mono;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .donut-frame{
+        width: auto;
+        height: 264px;
+        min-width: 320px;
+    }
+    .donut-frame pre{
+        width: auto;
+        font-size: 0.8em;
+    }
+}

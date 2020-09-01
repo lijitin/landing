@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './Demo.css';
 import Donut from '../Donut';
 
 export default class Demo extends React.Component{

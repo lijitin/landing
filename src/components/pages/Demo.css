@@ -1,0 +1,10 @@
+.demopage {
+    padding: 2em;
+}
+
+@media only screen and (max-width: 900px) {
+    .demopage{
+        padding: 2em;
+        max-width: 100%;
+    }
+}

@@ -18,6 +18,8 @@ class App extends React.Component {
       showSpotlight: true,
     }
     this.sidebarElement = React.createRef(); // store the child element for updating sidebar button border
+    this.displayBottom = React.createRef();
+    this.main = React.createRef();
   }
   handleSelectPage = (pageName) => {
     if(this.state.currentSpotlight === pageName){
@@ -25,21 +27,26 @@ class App extends React.Component {
     }
     this.setState({showSpotlight: false});
     this.sidebarElement.current.setState({ currentSelectedPageButton: pageName });
-    window.setTimeout(this.showPageNow.bind(this, this, pageName), 300);
+    window.setTimeout(this.showPageNow.bind(this, this, pageName), 50);
 
   }
 
   showPageNow(obj, pageName){
     obj.setState({currentSpotlight: pageName});
     obj.setState({showSpotlight: true});
-    // update sidebar div border
-    // obj.sideBarElement.setState({currentSelecetedPage: pageName});
+  }
+  scrollToBottom = () => {
+    this.displayBottom.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  componentDidUpdate(){
+    this.scrollToBottom();
   }
 
   render(){
     return (
       <div className="App">
-        <div className="main">
+        <div className="main" ref={this.main}>
           <Sidebar ref={this.sidebarElement} onSelectPage={this.handleSelectPage}></Sidebar>
           <div id='debug'></div>
           <div className="display">
@@ -51,11 +58,11 @@ class App extends React.Component {
             >
               <div className="spotlight">
                 {this.state.currentSpotlight==='home' && <Home onSelectPage={this.handleSelectPage}></Home>}
-                {this.state.currentSpotlight==='about' && <About></About>}
+                {this.state.currentSpotlight==='about' && <About toTop={this.main}></About>}
                 {this.state.currentSpotlight==='demo' && <Demo></Demo>}
               </div>
-              
             </CSSTransition>
+            <div ref={this.displayBottom}></div>
           </div>
         </div>
       </div>

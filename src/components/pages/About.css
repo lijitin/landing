@@ -1,6 +1,26 @@
-div.about{  
+div.aboutpage{  
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 2em;
 }
+
+.scrollButtonDiv{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .aboutpage .scrollButtonDiv{
+        display: block;
+        align-self: flex-end;
+    }
+    .aboutpage button {
+        font-size: 0.8em;
+        margin: 1em 0;
+        padding: 0.5em 1em;
+        background-color: black;
+        color: white;
+    }
+}
+
+
