@@ -18,12 +18,8 @@ export default class Sidebar extends React.Component{
     }
     
     handleSelectPageClick = (pageName) =>{
-        this.props.onSelectPage(pageName);
-        if(this.state.currentSelectedPageButton === pageName){
-            return;
-        }else {
-            this.setState({ currentSelectedPageButton: pageName });
-        }
+        this.props.onSelectPage(pageName)
+        this.setState({ currentSelectedPageButton: pageName });
     }
 
     divClassName = (pageName) => {

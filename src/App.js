@@ -22,9 +22,6 @@ class App extends React.Component {
     this.main = React.createRef();
   }
   handleSelectPage = (pageName) => {
-    if(this.state.currentSpotlight === pageName){
-      return;
-    }
     this.setState({showSpotlight: false});
     this.sidebarElement.current.setState({ currentSelectedPageButton: pageName });
     window.setTimeout(this.showPageNow.bind(this, this, pageName), 50);
