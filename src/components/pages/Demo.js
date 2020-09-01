@@ -10,15 +10,15 @@ export default class Demo extends React.Component{
             <div className="demopage">
                 <div>
                     <h1>Previous Projects</h1>
-                    <p>- This site - built with react (html, css, javascript). Published on <a href="https://github.com/lijitin/landing/">Github pages</a>.</p>
-                    <p>- Raspberry Pi 4 Distributed storage system - built with Apache Hadoop.</p>
-                    <p>- <a href="https://github.com/lijitin/Streambot">Audio streaming discord bot</a>
-                    - built on .NET framework, with RESTful API consumer library <a href="https://discord.foxbot.me/stable/">discord.net</a>.
-                    </p>
+                    <p>> This site - powered by ReactJS. </p>
+                    <p><a href="https://github.com/lijitin/landing/">Source here</a></p>
+                    <p>> <a href="https://github.com/lijitin/picluster">Raspberry Pi 4 distributed storage system</a></p>
+                    <p>built with Apache Hadoop</p>
+                    <p>> <a href="https://github.com/lijitin/Streambot">Audio streaming discord bot</a></p>
+                    <p> built on .NET framework, with RESTful API consumer library <a href="https://discord.foxbot.me/stable/">discord.net</a></p>
                 </div>
-                
                 <Donut></Donut>
-                <p>Spinny ASCII Donut refactored - original created by <a href="https://www.a1k0n.net/2011/07/20/donut-math.html">Andy Sloane</a></p>
+                <p>donut.c refactored - original by <a href="https://www.a1k0n.net/2011/07/20/donut-math.html">Andy Sloane</a></p>
             </div>
         )
     }
